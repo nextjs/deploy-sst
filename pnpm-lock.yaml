@@ -31,6 +31,9 @@ importers:
       '@types/react-dom':
         specifier: npm:types-react-dom@19.0.0-rc.1
         version: types-react-dom@19.0.0-rc.1
+      sst:
+        specifier: latest
+        version: 3.2.48
       typescript:
         specifier: ^5
         version: 5.6.3
@@ -205,6 +208,9 @@ packages:
   '@types/node@20.16.12':
     resolution: {integrity: sha512-LfPFB0zOeCeCNQV3i+67rcoVvoN5n0NVuR2vLG0O5ySQMgchuZlC4lgz546ZOJyDtj5KIgOxy+lacOimfqZAIA==}
 
+  aws4fetch@1.0.20:
+    resolution: {integrity: sha512-/djoAN709iY65ETD6LKCtyyEI04XIBP5xVvfmNxsEP0uJB5tyaGBztSryRr4HqMStr9R06PisQE7m9zDTXKu6g==}
+
   busboy@1.6.0:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
     engines: {node: '>=10.16.0'}
@@ -239,6 +245,16 @@ packages:
   is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
 
+  jose@4.15.9:
+    resolution: {integrity: sha512-1vUQX+IdDMVPj4k8kOxgUqlcK518yluMuGZwqlr44FS1ppZB/5GWh4rZG89erpOBOJjU/OBsnCVFfapsRz6nEA==}
+
+  jose@5.2.3:
+    resolution: {integrity: sha512-KUXdbctm1uHVL8BYhnyHkgp3zDX5KW8ZhAKVFEfUbU2P8Alpzjb+48hHvjOdQIyPshoblhzsuqOwEEAbtHVirA==}
+
+  lru-cache@6.0.0:
+    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
+    engines: {node: '>=10'}
+
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -264,6 +280,17 @@ packages:
         optional: true
       sass:
         optional: true
+
+  object-hash@2.2.0:
+    resolution: {integrity: sha512-gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw==}
+    engines: {node: '>= 6'}
+
+  oidc-token-hash@5.0.3:
+    resolution: {integrity: sha512-IF4PcGgzAr6XXSff26Sk/+P4KZFJVuHAJZj3wgO3vX2bMdNVp/QXTP3P7CEm9V1IdG8lDLY3HhiqpsE/nOwpPw==}
+    engines: {node: ^10.13.0 || >=12.0.0}
+
+  openid-client@5.6.4:
+    resolution: {integrity: sha512-T1h3B10BRPKfcObdBklX639tVz+xh34O7GjofqrqiAQdm7eHsQ00ih18x6wuJ/E6FxdtS2u3FmUGPDeEcMwzNA==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -300,6 +327,43 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
+  sst-darwin-arm64@3.2.48:
+    resolution: {integrity: sha512-zxBhpIzWhyOilinSdNE70EtQgXi3E0UMIEqMSQHpDCPP/qZ/swv9yD6jfsK3/7T7l8r11TV/Da9EXn6QdAi/Ow==}
+    cpu: [arm64]
+    os: [darwin]
+
+  sst-darwin-x64@3.2.48:
+    resolution: {integrity: sha512-6TX4YlB/CuwjhUxYmbW7DufXGP2/ZdkSVOSxbPMQkC90XLEbXXvk0Iq+KTqjygKp+7RovegU8GaAOoObQpbeTw==}
+    cpu: [x64]
+    os: [darwin]
+
+  sst-linux-arm64@3.2.48:
+    resolution: {integrity: sha512-Xmb6Ldaq4EjrHoglK9Ye5YwOERYAM6hYlnh6qDdux7t5EFmAWq37yi1KQMzYtDe1co0JEGYFZ226TQIYnzz1zg==}
+    cpu: [arm64]
+    os: [linux]
+
+  sst-linux-x64@3.2.48:
+    resolution: {integrity: sha512-3fylg6rUPLz8U37FnD2PKamC+0JNlG20RIjmgiGnGN04DyydfFqq1hpx6tGIJ0y2OlaQnMwGdoYhQzbq5xH5TQ==}
+    cpu: [x64]
+    os: [linux]
+
+  sst-linux-x86@3.2.48:
+    resolution: {integrity: sha512-KFZ8W4bLuNhP/hdBVKd3yv1x2LMAzhZd1IZhqYdMi52M+NlQWOyfAaezXtNktNrGOrUBOz26Z3890NCX4fJrIQ==}
+    cpu: [x86]
+    os: [linux]
+
+  sst@3.2.48:
+    resolution: {integrity: sha512-+kCqMS8Spc6GQHK4WDvLxWsgWTvfH18Lq4qpB8+al1FPDTFwimyp0BoY699Fu+4wJ9FSC8irBVHnIloUlO2TSQ==}
+    hasBin: true
+    peerDependencies:
+      hono: 4.x
+      valibot: 0.30.x
+    peerDependenciesMeta:
+      hono:
+        optional: true
+      valibot:
+        optional: true
+
   streamsearch@1.1.0:
     resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
     engines: {node: '>=10.0.0'}
@@ -333,6 +397,9 @@ packages:
 
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
+  yallist@4.0.0:
+    resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
 snapshots:
 
@@ -452,6 +519,8 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
+  aws4fetch@1.0.20: {}
+
   busboy@1.6.0:
     dependencies:
       streamsearch: 1.1.0
@@ -488,6 +557,14 @@ snapshots:
   is-arrayish@0.3.2:
     optional: true
 
+  jose@4.15.9: {}
+
+  jose@5.2.3: {}
+
+  lru-cache@6.0.0:
+    dependencies:
+      yallist: 4.0.0
+
   nanoid@3.3.7: {}
 
   next@15.0.1(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021):
@@ -514,6 +591,17 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+
+  object-hash@2.2.0: {}
+
+  oidc-token-hash@5.0.3: {}
+
+  openid-client@5.6.4:
+    dependencies:
+      jose: 4.15.9
+      lru-cache: 6.0.0
+      object-hash: 2.2.0
+      oidc-token-hash: 5.0.3
 
   picocolors@1.1.1: {}
 
@@ -569,6 +657,33 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
+  sst-darwin-arm64@3.2.48:
+    optional: true
+
+  sst-darwin-x64@3.2.48:
+    optional: true
+
+  sst-linux-arm64@3.2.48:
+    optional: true
+
+  sst-linux-x64@3.2.48:
+    optional: true
+
+  sst-linux-x86@3.2.48:
+    optional: true
+
+  sst@3.2.48:
+    dependencies:
+      aws4fetch: 1.0.20
+      jose: 5.2.3
+      openid-client: 5.6.4
+    optionalDependencies:
+      sst-darwin-arm64: 3.2.48
+      sst-darwin-x64: 3.2.48
+      sst-linux-arm64: 3.2.48
+      sst-linux-x64: 3.2.48
+      sst-linux-x86: 3.2.48
+
   streamsearch@1.1.0: {}
 
   styled-jsx@5.1.6(react@19.0.0-rc-69d4b800-20241021):
@@ -589,3 +704,5 @@ snapshots:
   typescript@5.6.3: {}
 
   undici-types@6.19.8: {}
+
+  yallist@4.0.0: {}
