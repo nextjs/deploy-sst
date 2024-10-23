@@ -8,11 +8,10 @@ This will deploy your Next.js app to AWS Fargate with Amazon ECS.
 
 1. Create an AWS account
 1. Configure your [AWS credentials](https://sst.dev/docs/iam-credentials#credentials)
-1. Install the SST CLI: `pnpm i -g sst`
-1. Install SST providers: `sst install`
+1. Install dependencies: `pnpm i`
+1. Install SST providers: `pnpm sst install`
 1. Install [Docker](https://docs.docker.com/get-docker/) on your machine
-1. Build your container: `docker build -t nextjs-docker .`
-1. Deploy: `sst deploy --stage production`
+1. Deploy: `pnpm sst deploy --stage production`
 
 For more information, see the Next.js [deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying#self-hosting).
 
